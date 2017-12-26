@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WebPageNote</title>
+   <link rel="icon" href="ico.ico" type="image/x-icon">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style type="text/css" media="screen">
+    body {
+        overflow: hidden;
+        background: #141414;
+    }
+
+    #editor {
+        margin: 0;
+        position: absolute;
+        top: 80px;
+        bottom: 0;
+        left: 0px;
+        right: 0px;
+        font-size: 26px;
+        opencity: 0.7;
+        border-color: black;
+    }
+      a {
+            text-decoration: none;
+            background: #141414;
+            }
+            .w3-dropdown-hover {
+            background: #141414;
+            }
+            .w3-button {
+             border-color: black;
+            }
+  </style>
+</head>
+<body>
+
+<pre id="editor">
+<form>
+<textarea>
+ <!DOCTYPE html>
+  <html lang="en">
+   <head>
+    <title></title>
+    <meta charset="UTF-8">
+     <link rel="icon" href="ico.ico" type="image/x-icon">
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+       html,
+        body, h1,  h2,  h3, h4, h5,  h6 {
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            }
+      </style>
+   </head>
+   <body>
+    <div id="contener">
+    
+     
+    </div>
+   </body>
+  </html>
+   </textarea>
+   </form>
+</pre>
+<br>
+<center>
+<div class="contener>
+       <div class=" w3-bar w3-#141414">
+         <div class="w3-dropdown-hover  "> 
+    <button class="w3-button w3-black " onClick="viewPage() ">Create</button>
+    <button class="w3-button w3-black ">Open file</button>
+    <button class="w3-button w3-black ">Save</button>
+    <button class="w3-button w3-black " onClick="this.style.behavior='url(#default#homepag e)';this.setHomePage(about:blank"); return false;"><font size="2">Set as home page</font></button>
+    <button class="w3-button w3-black ">Zheme</button>
+    <button class="w3-button w3-black ">Fonts size</button>
+    <button class="w3-button w3-black ">Fonts colos</button>
+    <button class="w3-button w3-black ">Fonts</button>
+    <button class="w3-button w3-black ">View</button>
+    <button class="w3-button w3-black ">Settings</button>
+    <button class="w3-button w3-black "></button></button>
+    <button class="w3-button w3-black "><img src="F_ckNormalClub.png"><a href="https://fucknormalclub.github.io/lol">Improvisation</a></button>
+    <button class="w3-button w3-black "><img src="https://ace.c9.io/doc/site/images/ace-tab.png"><a href="https://ace.c9.io">ACE</a></button>
+    <button class="w3-button w3-black"><a href="index.html ">Reset</a></button>
+ 
+  
+
+   
+ 
+    </div>
+    </div>
+ </center>
+ 
+    
+  
+  
+        <script>
+        window.name = "source"
+
+        function launchEditor() {
+            editor = window.open("1.htm", "editor", "height=310,width=350")
+        }
+
+        function viewPage() {
+            view = window.open("", "view")
+            view.document.open()
+            view.document.write(document.forms[0].elements[0].value)
+            view.document.close()
+        }
+    </script>
+
+  <script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/twilight");
+    editor.session.setMode("ace/mode/javascript");
+</script>
+
+</body>
+</html>
